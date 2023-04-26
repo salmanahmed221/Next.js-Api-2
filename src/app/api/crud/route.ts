@@ -34,6 +34,8 @@ export async function PUT(request: NextRequest) {
   }
 }
 
+// There is also require of body and id in put to update data
+
 export async function DELETE(request: NextRequest) {
   const req = await request.json();
   if (req.name) {
